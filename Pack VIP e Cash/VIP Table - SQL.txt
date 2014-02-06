@@ -1,0 +1,21 @@
+--
+-- Vip Table by Banned
+--
+
+
+DROP TABLE IF EXISTS `viptable`;
+CREATE TABLE `viptable` (
+  `vipacc_id` int(11) unsigned NOT NULL default '0',
+  `vip_id` varchar(255) NOT NULL default '',
+  `days` int(11) NOT NULL default '0',
+  `email` varchar(39) NOT NULL default '',
+  PRIMARY KEY  (`vipacc_id`),
+  KEY `name` (`vip_id`)
+) TYPE=MyISAM; 
+
+--
+-- Valores Primarios
+--
+
+
+INSERT INTO `viptable` (`vipacc_id`, `vip_id`, `days`, `email`) VALUES ('1', 'VIP', '1', 'vip@vip.com');
