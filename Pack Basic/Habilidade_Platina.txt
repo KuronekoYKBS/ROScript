@@ -1,17 +1,17 @@
-Ôªø//===============================================================//
+//===============================================================//
 // Autor [Desconhecido]											 //
-// Vers√£o : 1.0 Iniciado Script									 //
-// Vers√£o : 1.1 Adicionado 3¬∫ Classes (Yokus)					 //
-// Vers√£o : 1.2 Ajustado pequeno erro de ortografico (Yokus)	 //
+// Vers„o : 1.0 Iniciado Script									 //
+// Vers„o : 1.1 Adicionado 3∫ Classes (Yokus)					 //
+// Vers„o : 1.2 Ajustado pequeno erro de ortografico (Yokus)	 //
 //===============================================================//
 prontera,128,200,6	script	Habilidades de Platina	94,{
 	mes "[Habilidades de Platina]";
-	mes "Posso dar-lhe as habilidades especiais dispon√≠veis para a sua classe.";
+	mes "Posso dar-lhe as habilidades especiais disponÌveis para a sua classe.";
 	mes "Gostaria de obter as habilidades agora?";
 	next;
-	if (select("Sim:N√£o") == 2) {
+	if (select("Sim:N„o") == 2) {
 		mes "[Habilidades de Platina]";
-		mes "Tenha um √≥timo dia ... =^.^=";
+		mes "Tenha um Ûtimo dia ... =^.^=";
 		close;
 	}
 	skill 142,1,0; // First Aid
