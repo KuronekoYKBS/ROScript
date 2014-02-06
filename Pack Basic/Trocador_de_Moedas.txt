@@ -1,22 +1,22 @@
-// Criado por:                                                                        \\
+ï»¿// Criado por:                                                                        \\
 //====================================================================================\\
 //     ________    __              __         ________       _____            _____   \\
 //    /::::::::|  |::|            |::|       /::::::::\     |:::::\          /:::::|  \\
-//   /:/¨¨¨¨¨¨¨   |::|          __|::|__    /:/¨¨¨¨¨¨¨      |::|\::\        /::/|::|  \\
+//   /:/Â¨Â¨Â¨Â¨Â¨Â¨Â¨   |::|          __|::|__    /:/Â¨Â¨Â¨Â¨Â¨Â¨Â¨      |::|\::\        /::/|::|  \\
 //  |:|           |::|         |::::::::|  /:/              |::| \::\      /::/ |::|  \\
-//   \:\______    |::|    ____  ¨¨|::|¨¨  |:|               |::|  \::\    /::/  |::|  \\
+//   \:\______    |::|    ____  Â¨Â¨|::|Â¨Â¨  |:|               |::|  \::\    /::/  |::|  \\
 //    \:::::::\   |::|   /::::\   |::|    |:|     _______   |::|   \::\  /::/   |::|  \\
-//     ¨¨¨¨¨¨\:\  |::|  /:/  \:\  |::|    |:|    |:::::::/  |::|    \::\/::/    |::|  \\
-//            \:\ |::| |:|    |:| |::|     \:\    ¨¨¨¨/:/   |::|     \::::/     |::|  \\
-//    ________|:| |::|  \:\__/:/  |::|__    \:\______/:/    |::|      ¨¨¨¨      |::|  \\
+//     Â¨Â¨Â¨Â¨Â¨Â¨\:\  |::|  /:/  \:\  |::|    |:|    |:::::::/  |::|    \::\/::/    |::|  \\
+//            \:\ |::| |:|    |:| |::|     \:\    Â¨Â¨Â¨Â¨/:/   |::|     \::::/     |::|  \\
+//    ________|:| |::|  \:\__/:/  |::|__    \:\______/:/    |::|      Â¨Â¨Â¨Â¨      |::|  \\
 //   |:::::::::/  |::|   \::::/    \::::|    \::::::::/     |::|                |::|  \\
-//    ¨¨¨¨¨¨¨¨¨    ¨¨     ¨¨¨¨      ¨¨¨¨      ¨¨¨¨¨¨¨¨       ¨¨                  ¨¨   \\
+//    Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨    Â¨Â¨     Â¨Â¨Â¨Â¨      Â¨Â¨Â¨Â¨      Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨       Â¨Â¨                  Â¨Â¨   \\
 //====================================================================================\\
-//  Não retire os créditos, pois, deu um trabalhão pra fazê-lo!      para: brAthena   \\
-//               Não permito que seja postado em nenhum outro local.                  \\
+//  NÃ£o retire os crÃ©ditos, pois, deu um trabalhÃ£o pra fazÃª-lo!      para: brAthena   \\
+//               NÃ£o permito que seja postado em nenhum outro local.                  \\
 //====================================================================================\\
 prontera,150,150,6	script	Agiota#An	807,{
-//========= Configuração ==============================
+//========= ConfiguraÃ§Ã£o ==============================
 set @npctroca$,"[^FF0000Agiota^000000]";
 set @m_platina$,"^008000500.000.000^000000";
 set .z_platina,500000000;
@@ -27,19 +27,19 @@ set .z_prata,50000000;
 set @m_bronze$,"^00800010.000.000^000000";
 set .z_bronze,10000000;
 //-----------------------------------------------------
-//========= Não mude (pode dar erros no emulador) =====
+//========= NÃ£o mude (pode dar erros no emulador) =====
 set @z_maxtransp$,"^FF00001.500.000.000^000000";
 set .z_maxtransp,1500000000;
 //-----------------------------------------------------
 //========= Evite mexer daqui pra baixo ===============
 mes @npctroca$;
-mes "Olá ^0000CD"+strcharinfo(0)+"^000000,";
+mes "OlÃ¡ ^0000CD"+strcharinfo(0)+"^000000,";
 mes "Eu posso trocar seu zeny por moedas e moedas por zeny, facilitando o transporte de todo seu dinheiro. Cada moeda tem seu valor:";
-mes "Se você comprar uma moeda, por exemplo, de Ouro que vale "+@m_ouro$+"z cada uma, depois é só destrocá-la e terá seu "+@m_ouro$+"z de volta!";
+mes "Se vocÃª comprar uma moeda, por exemplo, de Ouro que vale "+@m_ouro$+"z cada uma, depois Ã© sÃ³ destrocÃ¡-la e terÃ¡ seu "+@m_ouro$+"z de volta!";
 emotion e_lv;
 next;
 mes @npctroca$;
-mes "As moedas e valores são:";
+mes "As moedas e valores sÃ£o:";
 mes "Moeda Platina ^FF0000= "+@m_platina$+"z.";
 mes "Moeda Ouro ^FF0000= "+@m_ouro$+"z.";
 mes "Moeda Prata ^FF0000= "+@m_prata$+"z.";
@@ -57,15 +57,15 @@ switch(select("Tenho moedas e quero zeny.", "Tenho zeny e quero moedas.", "No mo
 		{
 			case 5: mes "Volte assim que tiver!"; close;
 			case 1:
-				mes "Posso trocar até DUAS Moedas de Platina por vez. Quantas você deseja trocas?"; next;
-				mes "^FF0000Antenção:^000000 Não coloque numero menor que UM nem maior que DOIS!"; next;
+				mes "Posso trocar atÃ© DUAS Moedas de Platina por vez. Quantas vocÃª deseja trocas?"; next;
+				mes "^FF0000AntenÃ§Ã£o:^000000 NÃ£o coloque numero menor que UM nem maior que DOIS!"; next;
 				input @qtd_m; next;
 				if(@qtd_m < 1) {goto L_Erro;}
 				if(@qtd_m > 2) {goto L_Erro;}
 				if(countitem(677) < @qtd_m) {goto L_Semmoeda;}
 				if(Zeny + @qtd_m * .z_platina > .z_maxtransp) { goto L_Muitozeny; }
-				mes "Você tem^0000FF " + @qtd_m + " ^000000Moeda(s) de Platina?";
-				switch(select("Sim e quero trocar", "Não, vou pegar ainda!"))
+				mes "VocÃª tem^0000FF " + @qtd_m + " ^000000Moeda(s) de Platina?";
+				switch(select("Sim e quero trocar", "NÃ£o, vou pegar ainda!"))
 				{
 					case 2: goto L_Pegar;
 					case 1:
@@ -75,15 +75,15 @@ switch(select("Tenho moedas e quero zeny.", "Tenho zeny e quero moedas.", "No mo
 						mes "volte a falar comigo."; close;
 				}
 			case 2:
-				mes "Posso trocar até DEZ Moedas de Ouro por vez. Quantas você deseja trocas?"; next;
-				mes "^FF0000Antenção:^000000 Não coloque numero menor que UM nem maior que DEZ!"; next;
+				mes "Posso trocar atÃ© DEZ Moedas de Ouro por vez. Quantas vocÃª deseja trocas?"; next;
+				mes "^FF0000AntenÃ§Ã£o:^000000 NÃ£o coloque numero menor que UM nem maior que DEZ!"; next;
 				input @qtd_m; next;
 				if(@qtd_m < 1) {goto L_Erro;}
 				if(@qtd_m > 10) {goto L_Erro;}
 				if(countitem(671) < @qtd_m) {goto L_Semmoeda;}
 				if(Zeny + @qtd_m * .z_ouro > .z_maxtransp) { goto L_Muitozeny; }
-				mes "Você tem^0000FF " + @qtd_m + " ^000000Moeda(s) de Ouro?";
-				switch(select("Sim e quero trocar", "Não, vou pegar ainda!"))
+				mes "VocÃª tem^0000FF " + @qtd_m + " ^000000Moeda(s) de Ouro?";
+				switch(select("Sim e quero trocar", "NÃ£o, vou pegar ainda!"))
 				{
 					case 2: goto L_Pegar;
 					case 1:
@@ -92,15 +92,15 @@ switch(select("Tenho moedas e quero zeny.", "Tenho zeny e quero moedas.", "No mo
 						mes "Pronto, se tiver mais, volte a falar comigo."; close;
 				}
 			case 3:
-				mes "Posso trocar até VINTE Moedas de Prata por vez. Quantas você deseja trocas?"; next;
-				mes "^FF0000Antenção:^000000 Não coloque numero menor que UM nem maior que VINTE!"; next;
+				mes "Posso trocar atÃ© VINTE Moedas de Prata por vez. Quantas vocÃª deseja trocas?"; next;
+				mes "^FF0000AntenÃ§Ã£o:^000000 NÃ£o coloque numero menor que UM nem maior que VINTE!"; next;
 				input @qtd_m; next;
 				if(@qtd_m < 1) {goto L_Erro;}
 				if(@qtd_m > 20) {goto L_Erro;}
 				if(countitem(675) < @qtd_m) {goto L_Semmoeda;}
 				if(Zeny + @qtd_m * .z_prata > .z_maxtransp) { goto L_Muitozeny; }
-				mes "Você tem^0000FF " + @qtd_m + " ^000000Moeda(s) de Prata?";
-				switch(select("Sim e quero trocar", "Não, vou pegar ainda!"))
+				mes "VocÃª tem^0000FF " + @qtd_m + " ^000000Moeda(s) de Prata?";
+				switch(select("Sim e quero trocar", "NÃ£o, vou pegar ainda!"))
 				{
 					case 2: goto L_Pegar;
 					case 1:
@@ -109,15 +109,15 @@ switch(select("Tenho moedas e quero zeny.", "Tenho zeny e quero moedas.", "No mo
 						mes "Pronto, se tiver mais, volte a falar comigo."; close;
 				}
 			case 4:
-				mes "Posso trocar até CEM Moedas de Bronze por vez. Quantas você deseja trocas?"; next;
-				mes "^FF0000Antenção:^000000 Não coloque numero menor que UM nem maior que CEM!"; next;
+				mes "Posso trocar atÃ© CEM Moedas de Bronze por vez. Quantas vocÃª deseja trocas?"; next;
+				mes "^FF0000AntenÃ§Ã£o:^000000 NÃ£o coloque numero menor que UM nem maior que CEM!"; next;
 				input @qtd_m; next;
 				if(@qtd_m < 1) {goto L_Erro;}
 				if(@qtd_m > 100) {goto L_Erro;}
 				if(countitem(673) < @qtd_m) {goto L_Semmoeda;}
 				if(Zeny + @qtd_m * .z_bronze > .z_maxtransp) { goto L_Muitozeny; }
-				mes "Você tem^0000FF " + @qtd_m + " ^000000Moeda(s) de Bronze?";
-				switch(select("Sim e quero trocar", "Não, vou pegar ainda!"))
+				mes "VocÃª tem^0000FF " + @qtd_m + " ^000000Moeda(s) de Bronze?";
+				switch(select("Sim e quero trocar", "NÃ£o, vou pegar ainda!"))
 				{
 					case 2: goto L_Pegar;
 					case 1:
@@ -127,19 +127,19 @@ switch(select("Tenho moedas e quero zeny.", "Tenho zeny e quero moedas.", "No mo
 				}
 		}
 	case 2:
-		mes "Qual dessas moedas você gostaria?";
+		mes "Qual dessas moedas vocÃª gostaria?";
 		switch(select("Platina", "Ouro", "Prata", "Bonze", "Nenhuma!"))
 		{
 			case 5: mes "Espero te ajudar uma proxima vez!"; close;
 			case 1:
-				mes "Posso trocar até QUATRO Moedas de Platina por vez. Quantas você deseja trocas?"; next;
-				mes "^FF0000Antenção:^000000 Não coloque numero menor que UM nem maior que QUATRO!"; next;
+				mes "Posso trocar atÃ© QUATRO Moedas de Platina por vez. Quantas vocÃª deseja trocas?"; next;
+				mes "^FF0000AntenÃ§Ã£o:^000000 NÃ£o coloque numero menor que UM nem maior que QUATRO!"; next;
 				input @qtd_m; next;
 				if(@qtd_m < 1) {goto L_Erro;}
 				if(@qtd_m > 4) {goto L_Erro;}
 				if(Zeny < @qtd_m * .z_platina) {goto L_Semzeny;}
-				mes "Você quer mesmo^0000FF " + @qtd_m + " ^000000Moeda(s) de Platina?";
-				switch(select("Sim, eu quero trocar", "Não, vou pensar ainda!"))
+				mes "VocÃª quer mesmo^0000FF " + @qtd_m + " ^000000Moeda(s) de Platina?";
+				switch(select("Sim, eu quero trocar", "NÃ£o, vou pensar ainda!"))
 				{
 					case 2: goto L_Pegar;
 					case 1:
@@ -148,14 +148,14 @@ switch(select("Tenho moedas e quero zeny.", "Tenho zeny e quero moedas.", "No mo
 						mes "Pronto, se precisar de mais, volte a falar comigo."; close;
 				}
 			case 2:
-				mes "Posso trocar até VINTE Moedas de Ouro por vez. Quantas você deseja trocas?"; next;
-				mes "^FF0000Antenção:^000000 Não coloque numero menor que UM nem maior que VINTE!"; next;
+				mes "Posso trocar atÃ© VINTE Moedas de Ouro por vez. Quantas vocÃª deseja trocas?"; next;
+				mes "^FF0000AntenÃ§Ã£o:^000000 NÃ£o coloque numero menor que UM nem maior que VINTE!"; next;
 				input @qtd_m; next;
 				if(@qtd_m < 1) {goto L_Erro;}
 				if(@qtd_m > 20) {goto L_Erro;}
 				if(Zeny < @qtd_m * .z_ouro) {goto L_Semzeny;}
-				mes "Você quer mesmo^0000FF " + @qtd_m + " ^000000Moeda(s) de Ouro?";
-				switch(select("Sim, eu quero trocar", "Não, vou pensar ainda!"))
+				mes "VocÃª quer mesmo^0000FF " + @qtd_m + " ^000000Moeda(s) de Ouro?";
+				switch(select("Sim, eu quero trocar", "NÃ£o, vou pensar ainda!"))
 				{
 					case 2: goto L_Pegar;
 					case 1:
@@ -164,14 +164,14 @@ switch(select("Tenho moedas e quero zeny.", "Tenho zeny e quero moedas.", "No mo
 						mes "Pronto, se precisar de mais, volte a falar comigo."; close;
 				}
 			case 3:
-				mes "Posso trocar até QUARENTA Moedas de Prata por vez. Quantas você deseja trocas?"; next;
-				mes "^FF0000Antenção:^000000 Não coloque numero menor que UM nem maior que QUARENTA!"; next;
+				mes "Posso trocar atÃ© QUARENTA Moedas de Prata por vez. Quantas vocÃª deseja trocas?"; next;
+				mes "^FF0000AntenÃ§Ã£o:^000000 NÃ£o coloque numero menor que UM nem maior que QUARENTA!"; next;
 				input @qtd_m; next;
 				if(@qtd_m < 1) {goto L_Erro;}
 				if(@qtd_m > 40) {goto L_Erro;}
 				if(Zeny < @qtd_m * .z_prata) {goto L_Semzeny;}
-				mes "Você quer mesmo^0000FF " + @qtd_m + " ^000000Moeda(s) de Prata?";
-				switch(select("Sim, eu quero trocar", "Não, vou pensar ainda!"))
+				mes "VocÃª quer mesmo^0000FF " + @qtd_m + " ^000000Moeda(s) de Prata?";
+				switch(select("Sim, eu quero trocar", "NÃ£o, vou pensar ainda!"))
 				{
 					case 2: goto L_Pegar;
 					case 1:
@@ -180,14 +180,14 @@ switch(select("Tenho moedas e quero zeny.", "Tenho zeny e quero moedas.", "No mo
 						mes "Pronto, se precisar de mais, volte a falar comigo."; close;
 				}
 			case 4:
-				mes "Posso trocar até DUZENTAS Moedas de Bronze por vez. Quantas você deseja trocas?"; next;
-				mes "^FF0000Antenção:^000000 Não coloque numero menor que UM nem maior que DUZENTAS!"; next;
+				mes "Posso trocar atÃ© DUZENTAS Moedas de Bronze por vez. Quantas vocÃª deseja trocas?"; next;
+				mes "^FF0000AntenÃ§Ã£o:^000000 NÃ£o coloque numero menor que UM nem maior que DUZENTAS!"; next;
 				input @qtd_m; next;
 				if(@qtd_m < 1) {goto L_Erro;}
 				if(@qtd_m > 200) {goto L_Erro;}
 				if(Zeny < @qtd_m * .z_bronze) {goto L_Semzeny;}
-				mes "Você quer mesmo^0000FF " + @qtd_m + " ^000000Moeda(s) de Bronze?";
-				switch(select("Sim, eu quero trocar", "Não, vou pensar ainda!"))
+				mes "VocÃª quer mesmo^0000FF " + @qtd_m + " ^000000Moeda(s) de Bronze?";
+				switch(select("Sim, eu quero trocar", "NÃ£o, vou pensar ainda!"))
 				{
 					case 2: goto L_Pegar;
 					case 1:
@@ -200,18 +200,18 @@ switch(select("Tenho moedas e quero zeny.", "Tenho zeny e quero moedas.", "No mo
 }
 
 L_Muitozeny:
-mes "Desculpe, mas..., não quero ninguem andando por aí com mais de "+@z_maxtransp$+"z nos bolsos."; close;
+mes "Desculpe, mas..., nÃ£o quero ninguem andando por aÃ­ com mais de "+@z_maxtransp$+"z nos bolsos."; close;
 
 L_Semzeny:
-mes "Você não possui zeny suficiente para a troca! Desculpe.";
+mes "VocÃª nÃ£o possui zeny suficiente para a troca! Desculpe.";
 
 L_Semmoeda:
-mes "Você mentiu pois não tem^B22222 "+@qtd_m+" ^000000moeda(s) e toda mentira tem sua consequencia!";
+mes "VocÃª mentiu pois nÃ£o tem^B22222 "+@qtd_m+" ^000000moeda(s) e toda mentira tem sua consequencia!";
 next;
-atcommand "@die "+strcharinfo(0); npctalk "Esse "+strcharinfo(0)+" é um mentiroso! Tenham cuidado com ele!!!"; end;
+atcommand "@die "+strcharinfo(0); npctalk "Esse "+strcharinfo(0)+" Ã© um mentiroso! Tenham cuidado com ele!!!"; end;
 
 L_Erro:
-mes "Você foi avisad"+(Sex? "o!!!":"a!!!"); next;
+mes "VocÃª foi avisad"+(Sex? "o!!!":"a!!!"); next;
 atcommand "@kick "+strcharinfo(0); end;
 
 L_Pegar:

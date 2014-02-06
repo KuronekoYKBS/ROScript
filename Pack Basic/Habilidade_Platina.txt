@@ -1,17 +1,17 @@
-//===============================================================//
+ï»¿//===============================================================//
 // Autor [Desconhecido]											 //
-// Versão : 1.0 Iniciado Script									 //
-// Versão : 1.1 Adicionado 3º Classes (Yokus)					 //
-// Versão : 1.2 Ajustado pequeno erro de ortografico (Yokus)	 //
+// VersÃ£o : 1.0 Iniciado Script									 //
+// VersÃ£o : 1.1 Adicionado 3Âº Classes (Yokus)					 //
+// VersÃ£o : 1.2 Ajustado pequeno erro de ortografico (Yokus)	 //
 //===============================================================//
 prontera,128,200,6	script	Habilidades de Platina	94,{
 	mes "[Habilidades de Platina]";
-	mes "Posso dar-lhe as habilidades especiais disponíveis para a sua classe.";
+	mes "Posso dar-lhe as habilidades especiais disponÃ­veis para a sua classe.";
 	mes "Gostaria de obter as habilidades agora?";
 	next;
-	if (select("Sim:Não") == 2) {
+	if (select("Sim:NÃ£o") == 2) {
 		mes "[Habilidades de Platina]";
-		mes "Tenha um ótimo dia ... >.>";
+		mes "Tenha um Ã³timo dia ... =^.^=";
 		close;
 	}
 	skill 142,1,0; // First Aid

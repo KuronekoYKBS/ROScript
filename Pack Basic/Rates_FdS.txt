@@ -1,4 +1,4 @@
-//  ________________________________________________________
+Ôªø//  ________________________________________________________
 // /                                                        \
 // |       _           _   _   _                            |
 // |      | |__  _ __ / \ | |_| |__   ___ _ __   __ _       |
@@ -12,11 +12,11 @@
 // |--------------------------------------------------------|
 // | Criado por: RodrigoDias                                |
 // |--------------------------------------------------------|
-// | Versıes eA/brA: 1.1                                    |
+// | Vers√µes eA/brA: 1.1                                    |
 // |--------------------------------------------------------|
-// | DescriÁ„o: Modifca as rates do servidor                |
+// | Descri√ß√£o: Modifca as rates do servidor                |
 // | OnSat e OnMon: Ativa e desativa o evento               |
-// | CrÈditos: Ao Holy por ajudar na correÁ„o do NPC        |
+// | Cr√©ditos: Ao Holy por ajudar na corre√ß√£o do NPC        |
 // |--------------------------------------------------------|
 // \________________________________________________________/
 
@@ -30,7 +30,7 @@ OnSat0000:
 	set $@brate,750;
 	//Rate XP JOB
 	set $@jrate,750;
-	//Rate DROPS MOB; n„o afeta cartas
+	//Rate DROPS MOB; n√£o afeta cartas
 	set $@drate,450;
 	//Base exp
 	setbattleflag("base_exp_rate",$@brate);
@@ -43,19 +43,19 @@ OnSat0000:
 	setbattleflag("item_rate_equip",$@drate);
 
 	announce "Sistema de rates modificadas para o final de semana: 1."+($@brate-100)+"x 1."+($@jrate-100)+"x 1."+($@drate-100)+"x",bc_all,0xFF6060;
-	announce "N„o afetam as cartas, digite @rates e confira! - Bom jogo a todos",bc_all,0xFF6060;
+	announce "N√£o afetam as cartas, digite @rates e confira! - Bom jogo a todos",bc_all,0xFF6060;
 	end;
 
 
 OnMon0000:
-	// Checagens de TÈrmino
+	// Checagens de T√©rmino
 
 	//Modifique aqui para o servidor voltar a rate antiga.
 	//Rate XP BASE
 	set $@brate,500;
 	//Rate XP JOB
 	set $@jrate,500;
-	//Rate DROPS MOB; n„o afeta cartas
+	//Rate DROPS MOB; n√£o afeta cartas
 	set $@drate,300;
 	//Base exp
 	setbattleflag("base_exp_rate",$@brate);
